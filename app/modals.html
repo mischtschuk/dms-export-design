@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="mainHeader">
+    <div class="wrapper align-center content-justified">
+        <div class="mainMenuHolder">
+            <a href="#">
+                <img class="logo" src="img/logo.svg" alt="">
+            </a>
+            <ul class="mainMenu">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <div class="userInfoHolder">
+            <div class="dropdown optionsDropdown">
+                <a href="#" class="userInfo dropdown-toggle" data-toggle="dropdown">
+                    <img src="img/avatar.png" class="userImg sm">
+                    <span class="userName">Anthony Scott</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Change Password</a>
+                    <a class="dropdown-item" href="#">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="pageHolder default">
+        <div class="mainContainer">
+            <div class="pageBtnSection">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <div class="btnGroup">
+                            <a href="#" class="btnPrimary hasIco left"><img src="img/round-add-24px.svg" alt="" class="ico">Channels</a>
+                            <a href="#" class="btnSecondary">Save Templates</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="wrapper content-centered">
+                            <a href="#" class="btnLike hasIco right">Unsaved Template<img src="img/round-keyboard_arrow_down-24px.svg" alt="" class="ico"></a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="wrapper content-end">
+                            <div class="dropdown optionsDropdown checkboxLike">
+                                <a href="#" class="btnLike hasIco left dropdown-toggle" data-toggle="dropdown">
+                                    <img src="img/outline-settings-24px.svg" alt="" class="ico">Customize View
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item active" href="#">Digital Display</a>
+                                    <a class="dropdown-item active" href="#">Chart</a>
+                                    <a class="dropdown-item" href="#">Data Table</a>
+                                    <a class="dropdown-item active" href="#">Event Logger</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pageBlock hasPadTop">
+                <h2 class="">Modals</h2>
+                <div class="pageCard">
+                    <div class="btnHolder centered">
+                        <a href="#deleteTemplateModal" class="btnPrimary" data-toggle="modal">Delete Template Modal</a>
+                    </div>
+                    <div class="btnHolder centered">
+                        <a href="#saveTemplateModal" class="btnPrimary" data-toggle="modal">Save Template Modal</a>
+                    </div>
+                    <div class="btnHolder centered">
+                        <a href="#errorModal" class="btnPrimary" data-toggle="modal">Error Modal</a>
+                    </div>
+                    <div class="btnHolder centered">
+                        <a href="#addChannelModal" class="btnPrimary" data-toggle="modal">Add Channel Modal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!--<footer class="mainFooter">-->
+
+<!--</footer>-->
+
+
+<!--Delete Template Modal-->
+
+<div class="modal fade" id="deleteTemplateModal" tabindex="-1" role="dialog" aria-labelledby="deleteTemplateModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="">Permission</h2>
+                <p>
+                    Do you want to delete the template?
+                </p>
+                <div class="btnHolder end noPadBottom fixedWidthBtn padXl">
+                    <a href="#" class="btnSecondary">Cancel</a>
+                    <a href="#" class="btnPrimary">Create</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Delete Template Modal End-->
+
+
+<!--Save Template Modal-->
+
+<div class="modal fade" id="saveTemplateModal" tabindex="-1" role="dialog" aria-labelledby="saveTemplateModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="">Save template</h2>
+                <div class="formHolder">
+                    <form action="">
+                        <div class="form-group floatLabel">
+                            <label for="">Template name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="btnHolder end noPadBottom fixedWidthBtn">
+                    <a href="#" class="btnSecondary">Cancel</a>
+                    <a href="#" class="btnPrimary">Create</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Save Template Modal End-->
+
+
+<!--Error Modal-->
+
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="">Error</h2>
+                <p>
+                    Error or warning message here.
+                </p>
+                <div class="btnHolder end noPadBottom fixedWidthBtn padXl">
+                    <a href="#" class="btnPrimary">Ok</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Error Modal End-->
+
+
+<!--Add Channel Modal-->
+
+<div class="modal fade" id="addChannelModal" tabindex="-1" role="dialog" aria-labelledby="addChannelModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-center">Add Channels</h2>
+                <div class="formHolder">
+                    <form action="">
+                        <div class="form-group floatLabel searchHolder">
+                            <label for="">Search channel</label>
+                            <input type="text" class="form-control">
+                            <a href="#" class="removeBtn"></a>
+                        </div>
+                        <div class="form-group checkboxListHolder">
+                            <div class="labelLike">Allowed Jobs</div>
+                            <div class="checkboxListContainer">
+                                <a class="collapseHeading collapsed" data-toggle="collapse" href="#ac1">
+                                    Job Title 01
+                                </a>
+                                <div class="collapse" id="ac1">
+                                    <h3>Unit Title 01</h3>
+                                    <ul class="checkboxList">
+                                        <li class="checkbox">
+                                            <label for="aj1">
+                                                <input
+                                                        type="checkbox"
+                                                        id="aj1"
+                                                />
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                                <span class="labelText">
+                                                    All Jobs
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label for="aj2">
+                                                <input
+                                                        type="checkbox"
+                                                        id="aj2"
+                                                />
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                                <span class="labelText">
+                                                    All Jobs
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label for="aj3">
+                                                <input
+                                                        type="checkbox"
+                                                        id="aj3"
+                                                />
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                                <span class="labelText">
+                                                    All Jobs
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="collapseHeading collapsed" data-toggle="collapse" href="#ac2">
+                                    Job Title 02
+                                </a>
+                                <div class="collapse" id="ac2">
+                                    <h3>Unit Title 01</h3>
+                                    <ul class="checkboxList">
+                                        <li class="checkbox">
+                                            <label for="aj11">
+                                                <input
+                                                        type="checkbox"
+                                                        id="aj11"
+                                                />
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                                <span class="labelText">
+                                                    All Jobs
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label for="aj21">
+                                                <input
+                                                        type="checkbox"
+                                                        id="aj21"
+                                                />
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                                <span class="labelText">
+                                                    All Jobs
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label for="aj31">
+                                                <input
+                                                        type="checkbox"
+                                                        id="aj31"
+                                                />
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                                <span class="labelText">
+                                                    All Jobs
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnHolder end noPadBottom fixedWidthBtn">
+                            <a href="#" class="btnSecondary">Cancel</a>
+                            <a href="#" class="btnPrimary">Add</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Add Channel Modal End-->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

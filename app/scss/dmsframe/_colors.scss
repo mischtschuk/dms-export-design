@@ -1,0 +1,90 @@
+/*text colors*/
+
+.textPrimary {
+  color: $primaryColor;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-gray-600 {
+  color: $gray600;
+}
+
+.text-gray-400 {
+  color: $gray400;
+}
+
+.text-gray-300 {
+  color: $gray300;
+}
+
+.text-gray-200 {
+  color: $gray200;
+}
+
+.text-gray-100 {
+  color: $gray100;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-warning {
+  color: $warningColor;
+}
+
+.text-request {
+  color: $requestColor;
+}
+
+.linkPrimary {
+  color: $primaryColor;
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+//background colors
+
+.bg-primary {
+  background-color: $primaryColor;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-gray-600 {
+  background-color: $gray600;
+}
+
+.bg-gray-400 {
+  background-color: $gray400;
+}
+
+.bg-gray-300 {
+  background-color: $gray300;
+}
+
+.bg-gray-200 {
+  background-color: $gray200;
+}
+
+.bg-gray-100 {
+  background-color: $gray100;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-warning {
+  background-color: $warningColor;
+}
+
+.bg-request {
+  background-color: $requestColor;
+}

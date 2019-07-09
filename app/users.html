@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="mainHeader">
+    <div class="wrapper align-center content-justified">
+        <div class="mainMenuHolder">
+            <a href="#">
+                <img class="logo" src="img/logo.svg" alt="">
+            </a>
+            <ul class="mainMenu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#" class="active">Users</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <div class="userInfoHolder">
+            <div class="dropdown optionsDropdown">
+                <a href="#" class="userInfo dropdown-toggle" data-toggle="dropdown">
+                    <img src="img/avatar.png" class="userImg sm">
+                    <span class="userName">Anthony Scott</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Change Password</a>
+                    <a class="dropdown-item" href="#">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="pageHolder default">
+        <div class="mainContainer">
+            <div class="pageBtnSection">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <div class="btnGroup">
+                            <a href="#addNewUserModal" data-toggle="modal" class="btnPrimary hasIco left"><img src="img/round-add-24px.svg" alt="" class="ico">New User</a>
+                            <a href="#addOneJobPassModal" data-toggle="modal" class="btnSecondary">One Job Password</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pageBlock hasPadTop hasPadBottom">
+                <h2 class="pageBlockHeading">All Users</h2>
+                <div class="pageCard noPadding">
+                    <div class="tableHolder">
+                        <table class="usersTable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th class="hasArrow">User Type</th>
+                                    <th class="hasArrow up">Created</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="headingRow">
+                                    <td colspan="4">
+                                        <h3>Users (6)</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="userInfo">
+                                            <img src="img/avatar.png" class="userImg md">
+                                            <span class="userName">Anthony Scott</span>
+                                        </div>
+                                    </td>
+                                    <td>antony.scdcott65@gmail.com</td>
+                                    <td>User</td>
+                                    <td>2.15.2018</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="userInfo">
+                                            <img src="img/avatar.png" class="userImg md">
+                                            <span class="userName">Eve Timson</span>
+                                        </div>
+                                    </td>
+                                    <td>eve.timson@yahoo.com</td>
+                                    <td>User</td>
+                                    <td>10.14.2018</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="userInfo">
+                                            <img src="img/avatar.png" class="userImg md">
+                                            <span class="userName">Anna Schneider</span>
+                                        </div>
+                                    </td>
+                                    <td>anna.schneider16@hotmail.de</td>
+                                    <td>User</td>
+                                    <td>08.02.2018</td>
+                                </tr>
+                                <tr class="headingRow">
+                                    <td colspan="4">
+                                        <h3>One Job Password (2)</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="userInfo">
+                                            <img src="img/avatar.png" class="userImg md">
+                                            <span class="userName">Job Title</span>
+                                        </div>
+                                    </td>
+                                    <td>e.stanley85@gmail.com</td>
+                                    <td>One job password</td>
+                                    <td>08.02.2018</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="userInfo">
+                                            <img src="img/avatar.png" class="userImg md">
+                                            <span class="userName">Job Title</span>
+                                        </div>
+                                    </td>
+                                    <td>e.stanley85@gmail.com</td>
+                                    <td>One job password</td>
+                                    <td>08.02.2018</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!--Add New User Modal-->
+<div class="modal fade" id="addNewUserModal" tabindex="-1" role="dialog" aria-labelledby="addNewUserModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-center">Create a new user</h2>
+                <div class="formHolder">
+                    <form action="">
+                        <div class="form-group floatLabel hasError active">
+                            <label for="">Username</label>
+                            <input type="text" class="form-control" value="User Name">
+                            <div class="errorMsg">error text</div>
+                        </div>
+                        <div class="form-group floatLabel">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control">
+                            <div class="errorMsg">error text</div>
+                        </div>
+                        <div class="form-group checkboxListHolder">
+                            <div class="labelLike">Allowed Jobs</div>
+                            <div class="checkboxListContainer">
+                                <ul class="checkboxList">
+                                    <li class="checkbox">
+                                        <label for="aj1">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj1"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    All Jobs
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj2">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj2"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 01
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj3">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj3"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title with an extra long name that really possible asdkasd asdkasdk
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj4">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj4"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 03
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj5">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj5"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 04
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj6">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj6"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 05
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj7">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj7"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 06
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj8">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj8"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 07
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj9">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj9"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 08
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj10">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj10"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 09
+                                                </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group radioList">
+                            <div class="radio">
+                                <label for="ir1">
+                                    <input
+                                            type="radio"
+                                            id="ir1"
+                                            name="radio1"
+                                    />
+                                    <span class="circle">
+                                        <span class="check"></span>
+                                    </span>
+                                    <span class="labelText">All channels</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="ir2">
+                                    <input
+                                            type="radio"
+                                            id="ir2"
+                                            name="radio1"
+                                    />
+                                    <span class="circle">
+                                                <span class="check"></span>
+                                            </span>
+                                    <span class="labelText">Custom channels</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btnHolder end noPadBottom fixedWidthBtn">
+                            <a href="#" class="btnSecondary">Cancel</a>
+                            <a href="#" class="btnPrimary">Create</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Add New User Modal End-->
+
+<!--Add One Job Password Modal-->
+<div class="modal fade" id="addOneJobPassModal" tabindex="-1" role="dialog" aria-labelledby="addNewUserModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-center">Create a new user</h2>
+                <div class="formHolder">
+                    <form action="">
+                        <div class="form-group floatLabel">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group checkboxListHolder">
+                            <div class="labelLike">Allowed Jobs</div>
+                            <div class="checkboxListContainer">
+                                <ul class="checkboxList">
+                                    <li class="checkbox">
+                                        <label for="aj21">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj21"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    All Jobs
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj22">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj22"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 01
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj23">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj23"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title with an extra long name that really possible asdkasd asdkasdk
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj24">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj24"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 03
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj25">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj25"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 04
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj26">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj26"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 05
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj27">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj27"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 06
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj28">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj28"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 07
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj29">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj29"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 08
+                                                </span>
+                                        </label>
+                                    </li>
+                                    <li class="checkbox">
+                                        <label for="aj30">
+                                            <input
+                                                    type="checkbox"
+                                                    id="aj30"
+                                            />
+                                            <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+                                            <span class="labelText">
+                                                    Job Title 09
+                                                </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group radioList">
+                            <div class="radio">
+                                <label for="ir21">
+                                    <input
+                                            type="radio"
+                                            id="ir21"
+                                            name="radio1"
+                                    />
+                                    <span class="circle">
+                                        <span class="check"></span>
+                                    </span>
+                                    <span class="labelText">All channels</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="ir22">
+                                    <input
+                                            type="radio"
+                                            id="ir22"
+                                            name="radio1"
+                                    />
+                                    <span class="circle">
+                                                <span class="check"></span>
+                                            </span>
+                                    <span class="labelText">Custom channels</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btnHolder end noPadBottom fixedWidthBtn">
+                            <a href="#" class="btnSecondary">Cancel</a>
+                            <a href="#" class="btnPrimary">Create</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Add One Job Password Modal End-->
+
+<!--<footer class="mainFooter">-->
+
+<!--</footer>-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

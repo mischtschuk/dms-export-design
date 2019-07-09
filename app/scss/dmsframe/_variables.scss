@@ -1,0 +1,60 @@
+$fontFamily: 'Open Sans', sans-serif;
+$fontFamilySecondary: 'Open Sans', sans-serif;
+
+
+/* Responsive screen width */
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+/* Color vars */
+
+$primaryColor: #006ae7;
+$secondaryColor: #228ebd;
+
+$black: #000;
+$gray600: #505050;
+$gray400: #a7a7a7;
+$gray300: #eeeded;
+$gray200: #f9f9f9;
+$gray100: #fcfcfc;
+$white: #fff;
+
+$warningColor: #d31414;
+$requestColor: #2b9d02;
+
+$borderColor: $gray300;
+
+/*Responsive font size*/
+
+$fontSize: 14px;
+$fontSizeMute: 10px;
+$fontSizeLead: 16px;
+$fontSizeHeading: 22px;
+$fontSizeSubheading: 18px;
+
+$fontSizeDesktop: 12px;
+$fontSizeDesktopMute: 12px;
+$fontSizeDesktopLead: 12px;
+
+
+
+$fontWeightLight: 300;
+$fontWeightNormal: 400;
+$fontWeightBold: 700;
+
+//Layout
+
+$mobHeaderHeight: 64px;
+$desktopHeaderHeight: 31px;
+$bottomMenuHeight: 62px;
+$desktopAsideWidth: 240px;
+$optionsMenuWidth: 240px;
+$breadcrumbsHeight: 64px;
+
+$fontFamilyPrint: 'Swiss 721 Bold';
+
+//Bootstrap styling variables
+$grid-gutter-width: 24px;

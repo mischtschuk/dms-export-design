@@ -1,0 +1,44 @@
+.text-mute {
+  font-size: $fontSizeMute;
+}
+
+.text-lead {
+  font-size: $fontSizeLead;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.text-italic {
+  font-style: italic !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform-normal {
+  text-transform: none;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 18px;
+  color: rgba(68, 68, 68, 0.88);
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: rgba(68, 68, 68, 0.56);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+

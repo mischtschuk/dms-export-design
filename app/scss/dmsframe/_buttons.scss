@@ -1,0 +1,234 @@
+
+//$btnShadowHover: 0 0 8px rgba(0,0,0,.2);
+//$btnShadowActive: inset 0 0 8px rgba(0,0,0,.1);
+$btnPadding: 10px 16px;
+$btnFontSize: 14px;
+$btnFontWeight: 600;
+$btnLineHeight: 1.2;
+
+.btnHolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  &.padXl {
+    padding: 36px 0;
+  }
+  &.fixedWidthBtn {
+    [class^='btn'] {
+      width: 120px;
+    }
+  }
+  &.centered {
+    justify-content: center;
+  }
+  &.end {
+    justify-content: flex-end;
+    * + * {
+      margin-left: 16px;
+    }
+  }
+  &.noPadTop {
+    padding-top: 0;
+  }
+  &.noPadBottom {
+    padding-bottom: 0;
+  }
+  &.centeredSm {
+    flex-wrap: wrap;
+    //[class^='btn'] {
+    //  width: 100%;
+    //}
+    .btnPrimary {
+      order: 1;
+      width: 100%;
+    }
+    .linkPrimary {
+      order: 2;
+      margin: auto;
+      margin-top: 16px;
+      display: inline-block;
+    }
+  }
+}
+
+[class^='btn'] {
+  &.hasIco {
+    display: flex;
+    align-items: center;
+    &.right {
+      .ico {
+        margin-left: 4px;
+      }
+    }
+    &.left {
+      .ico {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.btnLike {
+  font-size: 15px;
+  font-weight: $btnFontWeight;
+  line-height: $btnLineHeight;
+  color: rgba(68, 68, 68, 0.88);
+  display: flex;
+  //padding: $btnPadding;
+  white-space: nowrap;
+  text-align: center;
+  &:hover {
+    color: darken(rgba(68, 68, 68, 0.88), 20%);
+    text-decoration: none;
+  }
+
+}
+
+.btnPrimary {
+  display: flex;
+  padding: 10px 32px;
+  font-size: $btnFontSize;
+  line-height: 1.3;
+  color: #fff;
+  background: $primaryColor;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid $primaryColor;
+  //transition: .5s;
+  box-shadow: none;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  border-radius: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  justify-content: center;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:active {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    background: #c4c4c4;
+    border-color: #c4c4c4;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+  &.loading {
+    color: rgba(0,0,0,0) !important;
+    &:after {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #fff;
+      border-left-color: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -7px;
+      margin-left: -7px;
+      animation-duration: .8s;
+      animation-iteration-count: infinite;
+      animation-name: loader;
+      animation-timing-function: linear;
+    }
+  }
+  &.fullWidth {
+    width: 100%;
+  }
+}
+
+.btnSecondary {
+  display: flex;
+  padding: 10px 32px;
+  font-size: $btnFontSize;
+  line-height: 1.3;
+  color: rgba(68, 68, 68, 0.88);
+  background: transparent;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid rgba(68, 68, 68, 0.24);
+  transition: .5s;
+  box-shadow: none;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  border-radius: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  &:hover {
+    text-decoration: none;
+    color: rgba(68, 68, 68, 0.88);
+  }
+  &:active {
+    text-decoration: none;
+    //color: #fff;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    background: #c4c4c4;
+    border-color: #c4c4c4;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+  &.loading {
+    color: rgba(0,0,0,0) !important;
+    &:after {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #fff;
+      border-left-color: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -7px;
+      margin-left: -7px;
+      animation-duration: .8s;
+      animation-iteration-count: infinite;
+      animation-name: loader;
+      animation-timing-function: linear;
+    }
+  }
+  &.fullWidth {
+    width: 100%;
+  }
+}
+
+@keyframes loader {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+
+@media (min-width: $screen-md) {
+  .btnHolder {
+    &.centeredSm {
+      flex-wrap: nowrap;
+      .btnPrimary {
+        order: 2;
+        width: auto;
+      }
+      .linkPrimary {
+        order: 1;
+        margin: 0;
+      }
+    }
+  }
+}
