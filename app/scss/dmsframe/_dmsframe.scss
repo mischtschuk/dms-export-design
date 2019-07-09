@@ -390,6 +390,38 @@ body {
   }
 }
 
+.progressBarHolder {
+  display: flex;
+  align-items: center;
+  .progressBar {
+    border: solid 1px #006ae7;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 10px 32px;
+    flex-grow: 1;
+  }
+  .qnt {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.28px;
+    color: #006ae7;
+  }
+  .progress {
+    opacity: 0.05;
+    background-color: #0094c2;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
 @media (min-width: $screen-sm) {
   .digitalDisplayList {
     .digitalDisplayListItem {

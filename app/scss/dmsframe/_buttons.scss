@@ -210,6 +210,9 @@ $btnLineHeight: 1.2;
   &.fullWidth {
     width: 100%;
   }
+  &.btnRound {
+    padding: 10px;
+  }
 }
 
 @keyframes loader {

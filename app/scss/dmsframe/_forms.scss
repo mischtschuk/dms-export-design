@@ -234,6 +234,32 @@
       font-size: 13px;
       z-index: 2;
     }
+    .loadItem {
+      .icoHolder {
+        margin-right: 4px;
+        img {
+          width: 20px;
+          height: 20px;
+          display: block;
+        }
+      }
+      .loadFile {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+      }
+      .name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #006ae7;
+      }
+      .loadQnt {
+        font-size: 14px;
+        font-weight: 600;
+        color: #006ae7;
+        text-align: center;
+      }
+    }
     .collapseHeading {
       display: flex;
       padding: 12px 12px;
@@ -260,6 +286,7 @@
       }
       &.hasBadge {
         position: relative;
+        padding-right: 72px;
       }
     }
     .liveBadge {
